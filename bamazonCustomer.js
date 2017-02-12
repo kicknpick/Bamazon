@@ -7,8 +7,8 @@ var mysql = require("mysql");
 // Create instance of express app.
 var app = express();
 
-// Specify the port.
-var port = 3000;
+// Sets an initial port. I think you do this instead of just port 3000 since we're deploying to heroku
+var PORT = process.env.PORT || 3000;
 
 // MySQL DB Connection Information (remember to change this with our specific credentials)
 var connection = mysql.createConnection({
@@ -46,6 +46,8 @@ app.get("/", function(req, res) {
   });
 });
 
-app.listen(port)
+app.listen(PORT, function(){
+  console.log("App listening on Port: " + PORT);
+})
 
 
