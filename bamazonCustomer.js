@@ -1,4 +1,5 @@
 
+
 // Dependencies
 var express = require("express");
 var mysql = require("mysql");
@@ -28,15 +29,15 @@ connection.connect(function(err) {
 
 // Routes
 app.get("/", function(req, res) {
-  connection.query("SELECT * FROM products order by department_name", function(err, result) {
+  connection.query("SELECT * FROM products order by item_id", function(err, result) {
     var html = "<h1> Product List By Department </h1>";
 
     html += "<ul>";
 
     for (var i = 0; i < result.length; i++) {
-      html += "<li><p> Product: " + result[i].product_name + "</p>";
-      html += "<p> Price: " + result[i].price + " </p>";
-      html += "<p>Quantity: " + result[i].quantity + " </p></li>";
+      html += "<li><p> Product: " + result[i].product_name + "</p>"
+      html += "<p> Price: $ " + result[i].price + " </p>";
+      html += "<p> ID: " + result[i].item_id + "</p></li>";
     }
 
     html += "</ul>";
@@ -46,3 +47,5 @@ app.get("/", function(req, res) {
 });
 
 app.listen(port)
+
+
