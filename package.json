@@ -1,0 +1,27 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "Bamazon hwk",
+  "main": "bamazonCustomer.js",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "mysql": "^2.13.0",
+    "nodemon": "^1.11.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kicknpick/Bamazon.git"
+  },
+  "author": "Travis Pickering",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kicknpick/Bamazon/issues"
+  },
+  "homepage": "https://github.com/kicknpick/Bamazon#readme"
+}
