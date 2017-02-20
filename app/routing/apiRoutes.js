@@ -11,7 +11,7 @@ module.exports = function(app) {
     host: "us-cdbr-iron-east-04.cleardb.net",
     user: "b66f4cd7f17d3c",
     password: "a9f63c3b",
-    database: "Bamazon_DB"
+    database: "heroku_d51835d1601fcba"
   });
 
   // Initiate MySQL Connection.
