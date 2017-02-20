@@ -8,7 +8,7 @@ module.exports = function(app) {
   
   // MySQL DB Connection Information (remember to change this with our specific credentials)
   var connection = mysql.createConnection({
-    host: "localhost",
+    host: "us-cdbr-iron-east-04.cleardb.net",
     user: "b66f4cd7f17d3c",
     password: "a9f63c3b",
     database: "Bamazon_DB"
